@@ -429,7 +429,7 @@ if($auth) {
             }
             ?>
             <ul class="sidebar-menu">
-                <li class="header">MAIN NAVIGATION</li>
+                <li class="header">NAVIGATIE</li>
                 <!-- Home Page -->
                 <li<?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
                     <a href="index.php">
