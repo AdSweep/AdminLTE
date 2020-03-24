@@ -41,7 +41,7 @@
         <!-- small box -->
         <div class="small-box bg-aqua">
             <div class="inner">
-                <p>Verzoeken Geblokkeerd</p>
+                <p>Advertenties Geblokkeerd</p>
                 <h3 class="statistic"><span id="ads_blocked_today">---</span></h3>
             </div>
             <div class="icon">
