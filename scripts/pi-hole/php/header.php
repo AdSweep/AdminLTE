@@ -270,9 +270,6 @@ if($auth) {
         <section class="sidebar">
             <!-- Sidebar user panel -->
             <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="img/logo.svg" class="img-responsive" alt="Pi-hole logo" style="display: table; table-layout: fixed; height: 67px;" />
-                </div>
                 <div class="pull-left info">
                     <p>Status</p>
                         <?php
