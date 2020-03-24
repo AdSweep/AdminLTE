@@ -185,3 +185,7 @@
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
 }
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #06002b;
+}
