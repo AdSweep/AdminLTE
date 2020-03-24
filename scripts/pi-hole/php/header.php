@@ -252,7 +252,7 @@ if($auth) {
             <span class="logo-lg"><b>AdSweep</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top navbar-custom" role="navigation">
+        <nav class="navbar navbar-static-top navbar-default" role="navigation">
             <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle navigation</span>
