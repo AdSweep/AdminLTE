@@ -49,6 +49,49 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box" id="queries-over-time">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Verzoeken over de laatste <?php echo getinterval(); ?> uren</h3>
+                </div>
+                <div class="box-body">
+                    <div class="chart">
+                        <canvas id="queryOverTimeChart" width="800" height="140"></canvas>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <i class="fa fa-sync fa-spin"></i>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+    <?php
+    // If the user is logged in, then we show the more detailed index page.
+    // Even if we would include them here anyhow, there would be nothing to
+    // show since the API will respect the privacy of the user if he defines
+    // a password
+    if($auth){ ?>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box" id="clients">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Clients (over time)</h3>
+                </div>
+                <div class="box-body">
+                    <div class="chart">
+                        <canvas id="clientsChart" width="800" height="140" class="extratooltipcanvas"></canvas>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <i class="fa fa-sync fa-spin"></i>
+                </div>
+                <!-- /.box-body -->
+            </div>
+        </div>
+    </div>
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
@@ -77,51 +120,6 @@
     </div>
     <!-- ./col -->
 </div>
-
-<div class="row">
-    <div class="col-md-12">
-    <div class="box" id="queries-over-time">
-        <div class="box-header with-border">
-          <h3 class="box-title">Verzoeken over de laatste <?php echo getinterval(); ?> uren</h3>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="queryOverTimeChart" width="800" height="140"></canvas>
-          </div>
-        </div>
-        <div class="overlay">
-          <i class="fa fa-sync fa-spin"></i>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-</div>
-<?php
-  // If the user is logged in, then we show the more detailed index page.
-  // Even if we would include them here anyhow, there would be nothing to
-  // show since the API will respect the privacy of the user if he defines
-  // a password
-  if($auth){ ?>
-
-<div class="row">
-    <div class="col-md-12">
-    <div class="box" id="clients">
-        <div class="box-header with-border">
-          <h3 class="box-title">Clients (over time)</h3>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="clientsChart" width="800" height="140" class="extratooltipcanvas"></canvas>
-          </div>
-        </div>
-        <div class="overlay">
-          <i class="fa fa-sync fa-spin"></i>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-</div>
-
 <div class="row">
     <div class="col-md-12 col-lg-6">
     <div class="box" id="query-types-pie">
