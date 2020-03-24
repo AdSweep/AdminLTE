@@ -247,7 +247,7 @@ if($auth) {
         <!-- Logo -->
         <a href="http://pi-hole.net" class="logo" target="_blank">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini">P<b>h</b></span>
+            <span class="logo-mini">A<b>S</b></span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>AdSweep</b></span>
         </a>
