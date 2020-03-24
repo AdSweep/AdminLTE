@@ -28,7 +28,7 @@
         <!-- small box -->
         <div class="small-box bg-green" id="total_queries" title="only A + AAAA queries">
             <div class="inner">
-                <p>Total queries (<span id="unique_clients">-</span> clients)</p>
+                <p>Totale verzoeken (<span id="unique_clients">-</span> apparaten)</p>
                 <h3 class="statistic"><span id="dns_queries_today">---</span></h3>
             </div>
             <div class="icon">
