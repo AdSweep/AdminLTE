@@ -28,7 +28,7 @@
         <!-- small box -->
         <div class="small-box bg-green" id="total_queries" title="only A + AAAA queries">
             <div class="inner">
-                <p>Totale verzoeken (<span id="unique_clients">-</span> apparaten)</p>
+                <p>Totale Verzoeken (<span id="unique_clients">-</span> Apparaten)</p>
                 <h3 class="statistic"><span id="dns_queries_today">---</span></h3>
             </div>
             <div class="icon">
@@ -41,7 +41,7 @@
         <!-- small box -->
         <div class="small-box bg-aqua">
             <div class="inner">
-                <p>Queries Blocked</p>
+                <p>Verzoeken Geblokkeerd</p>
                 <h3 class="statistic"><span id="ads_blocked_today">---</span></h3>
             </div>
             <div class="icon">
@@ -54,7 +54,7 @@
         <!-- small box -->
         <div class="small-box bg-yellow">
             <div class="inner">
-                <p>Percent Blocked</p>
+                <p>Percentage Geblokeerd</p>
                 <h3 class="statistic"><span id="ads_percentage_today">---</span></h3>
             </div>
             <div class="icon">
@@ -67,7 +67,7 @@
         <!-- small box -->
         <div class="small-box bg-red" title="<?php echo gravity_last_update(); ?>">
             <div class="inner">
-                <p>Domains on Blocklist</p>
+                <p>Domaeinen op Blocklist</p>
                 <h3 class="statistic"><span id="domains_being_blocked">---</span></h3>
             </div>
             <div class="icon">
@@ -82,7 +82,7 @@
     <div class="col-md-12">
     <div class="box" id="queries-over-time">
         <div class="box-header with-border">
-          <h3 class="box-title">Queries over last <?php echo getinterval(); ?> hours</h3>
+          <h3 class="box-title">Verzoeken over de laatste <?php echo getinterval(); ?> uren</h3>
         </div>
         <div class="box-body">
           <div class="chart">
