@@ -192,10 +192,10 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <meta name="theme-color" content="#367fa9">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/logo.svg">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/logo.svg">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/adsweep.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/adsweep.png">
     <meta name="msapplication-TileColor" content="#367fa9">
-    <meta name="msapplication-TileImage" content="img/logo.svg">
+    <meta name="msapplication-TileImage" content="img/adsweep.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link href="style/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -207,7 +207,7 @@
     <link href="style/vendor/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <link href="style/vendor/skin-blue.min.css" rel="stylesheet" type="text/css" />
     <link href="style/pi-hole.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" sizes="160x160" href="img/logo.svg" />
+    <link rel="icon" type="image/png" sizes="160x160" href="img/adsweep.png" />
 
     <!--[if lt IE 9]>
     <script src="scripts/vendor/html5shiv.min.js"></script>
