@@ -280,7 +280,7 @@ if($auth) {
                                     <a class="btn-link" href="https://github.com/pi-hole" target="_blank">GitHub</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
-                                    <a class="btn-link" href="https://pi-hole.net" target="_blank">Website</a>
+                                    <a class="btn-link" href="https://adsweep.nl" target="_blank">Website</a>
                                 </div>
                                 <div class="col-xs-4 text-center">
                                     <a class="btn-link" href="https://github.com/pi-hole/pi-hole/releases" target="_blank">Updates</a>
