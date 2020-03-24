@@ -67,7 +67,7 @@
         <!-- small box -->
         <div class="small-box bg-red" title="<?php echo gravity_last_update(); ?>">
             <div class="inner">
-                <p>Domaeinen op Blocklist</p>
+                <p>Domeinen op Blocklist</p>
                 <h3 class="statistic"><span id="domains_being_blocked">---</span></h3>
             </div>
             <div class="icon">
