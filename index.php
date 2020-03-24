@@ -39,7 +39,7 @@
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-aqua">
+        <div class="small-box bg-red">
             <div class="inner">
                 <p>Advertenties Geblokkeerd</p>
                 <h3 class="statistic"><span id="ads_blocked_today">---</span></h3>
@@ -65,7 +65,7 @@
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-red" title="<?php echo gravity_last_update(); ?>">
+        <div class="small-box bg-aqua" title="<?php echo gravity_last_update(); ?>">
             <div class="inner">
                 <p>Domeinen op Blocklist</p>
                 <h3 class="statistic"><span id="domains_being_blocked">---</span></h3>
