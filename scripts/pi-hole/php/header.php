@@ -513,11 +513,6 @@ if($auth) {
                   </ul>
                 </li>
                 <!-- Network -->
-                <li<?php if($scriptname === "network.php"){ ?> class="active"<?php } ?>>
-                    <a href="network.php">
-                        <i class="fa fa-network-wired"></i> <span>Network</span>
-                    </a>
-                </li>
                 <!-- Settings -->
                 <li<?php if($scriptname === "settings.php"){ ?> class="active"<?php } ?>>
                     <a href="settings.php">
@@ -548,11 +543,6 @@ if($auth) {
                 <!-- Donate -->
                 <?php if($auth){ ?>
                 <!-- Help -->
-                <li<?php if($scriptname === "help.php"){ ?> class="active"<?php } ?>>
-                    <a href="help.php">
-                        <i class="fa fa-question-circle"></i> <span>Help</span>
-                    </a>
-                </li>
                 <?php } ?>
             </ul>
         </section>
