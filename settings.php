@@ -911,24 +911,86 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                     $adminemail = "";
                 }
                 ?>
+                <div id="api" class="tab-pane fade<?php if($tab === "api"){ ?> in active<?php } ?>">
+                    <div class="row">
                         <div class="col-md-6">
                             <form role="form" method="post">
                                 <div class="box box-warning">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Web interface instellingen</h3>
+                                        <h3 class="box-title">API settings</h3>
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <h4>Interface uiterlijk</h4>
+                                                <h4>Top Lists</h4>
+                                                <p>Exclude the following domains from being shown in</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Top Domains / Top Advertisers</label>
+                                                    <textarea name="domains" class="form-control" placeholder="Enter one domain per line"
+                                                              rows="4"><?php foreach ($excludedDomains as $domain) {
+                                                                             echo $domain . "\n"; }
+                                                                       ?></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Top Clients</label>
+                                                    <textarea name="clients" class="form-control" placeholder="Enter one IP address or host name per line"
+                                                              rows="4"><?php foreach ($excludedClients as $client) {
+                                                                             echo $client . "\n"; }
+                                                                       ?></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                            <h4>Query Log</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="checkbox"><label><input type="checkbox" name="querylog-permitted" <?php if($queryLog === "permittedonly" || $queryLog === "all"){ ?>checked<?php } ?>> Show permitted domain entries</label></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="checkbox"><label><input type="checkbox" name="querylog-blocked" <?php if($queryLog === "blockedonly" || $queryLog === "all"){ ?>checked<?php } ?>> Show blocked domain entries</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer clearfix">
+                                        <input type="hidden" name="field" value="API">
+                                        <input type="hidden" name="token" value="<?php echo $token ?>">
+                                        <button type="button" class="btn btn-primary api-token">Show API token</button>
+                                        <button type="submit" class="btn btn-primary pull-right">Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form role="form" method="post">
+                                <div class="box box-warning">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Web interface settings</h3>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4>Interface appearance</h4>
                                                 <div class="form-group">
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" name="boxedlayout" value="yes"
                                                                       <?php if ($boxedlayout){ ?>checked<?php }
-                                                                      ?>>Gebruik de kleine layout (makkelijker werken op grotere schermen)</label>
+                                                                      ?>>Use boxed layout (helpful when working on large screens)</label>
                                                     </div>
                                                 </div>
-                                                <h4>CPU Temperatuur eenheid</h4>
+                                                <h4>CPU Temperature Unit</h4>
                                                 <div class="form-group">
                                                     <div class="radio">
                                                         <label><input type="radio" name="tempunit" value="C"
@@ -946,7 +1008,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                                                       ?>>Fahrenheit</label>
                                                     </div>
                                                 </div>
-                                                <h4>Administrator Email Adres</h4>
+                                                <h4>Administrator Email Address</h4>
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="adminemail"
