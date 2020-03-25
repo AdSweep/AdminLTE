@@ -384,7 +384,7 @@ if($auth) {
                 <!-- Query Log -->
                 <li<?php if($scriptname === "queries.php"){ ?> class="active"<?php } ?>>
                     <a href="queries.php">
-                        <i class="fa fa-file-alt"></i> <span>Query Log</span>
+                        <i class="fa fa-file-alt"></i> <span>Netwerkactiviteit</span>
                     </a>
                 </li>
                 <li class="treeview<?php if($scriptname === "db_queries.php" || $scriptname === "db_lists.php" || $scriptname === "db_graph.php"){ ?> active<?php } ?>">
