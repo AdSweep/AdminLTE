@@ -49,7 +49,7 @@
     <footer class="main-footer">
 	<!-- Version Infos -->
 
-        <div class="text-center" style="display: inline-block "><strong><i class="fa fa-heart mx-auto"></i></a></strong> Adsweep</div>
+        <div class="" style="display: inline-block "><strong><i class="fa fa-heart text-center"></i></a></strong> Adsweep</div>
     </footer>
 </div>
 <!-- ./wrapper -->
