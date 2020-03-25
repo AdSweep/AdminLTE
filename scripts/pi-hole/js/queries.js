@@ -183,31 +183,31 @@ $(document).ready(function() {
                 blocked = true;
                 color = "red";
                 fieldtext = "Blocked (gravity)";
-                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Whitelist</button>";
+                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Toestaan</button>";
                 break;
             case "2":
                 blocked = false;
                 color = "green";
                 fieldtext = "OK <br class='hidden-lg'>(forwarded)"+dnssec_status;
-                buttontext = "<button style=\"color:red; white-space: nowrap;\"><i class=\"fa fa-ban\"></i> Blacklist</button>";
+                buttontext = "<button style=\"color:red; white-space: nowrap;\"><i class=\"fa fa-ban\"></i> Blokkeren</button>";
                 break;
             case "3":
                 blocked = false;
                 color = "green";
                 fieldtext = "OK <br class='hidden-lg'>(cached)"+dnssec_status;
-                buttontext = "<button style=\"color:red; white-space: nowrap;\"><i class=\"fa fa-ban\"></i> Blacklist</button>";
+                buttontext = "<button style=\"color:red; white-space: nowrap;\"><i class=\"fa fa-ban\"></i> Blokkeren</button>";
                 break;
             case "4":
                 blocked = true;
                 color = "red";
                 fieldtext = "Blocked <br class='hidden-lg'>(regex/wildcard)";
-                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Whitelist</button>" ;
+                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Toestaan</button>" ;
                 break;
             case "5":
                 blocked = true;
                 color = "red";
                 fieldtext = "Blocked <br class='hidden-lg'>(blacklist)";
-                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Whitelist</button>" ;
+                buttontext = "<button style=\"color:green; white-space: nowrap;\"><i class=\"fas fa-check\"></i> Toestaan</button>" ;
                 break;
             case "6":
                 blocked = true;

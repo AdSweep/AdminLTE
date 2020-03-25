@@ -127,7 +127,7 @@ if(strlen($showing) > 0)
     <div class="col-md-12">
       <div class="box" id="recent-queries">
         <div class="box-header with-border">
-          <h3 class="box-title">Recente verzoeken></h3>
+          <h3 class="box-title">Recente verzoeken</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
