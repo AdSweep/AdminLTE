@@ -915,20 +915,20 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                             <form role="form" method="post">
                                 <div class="box box-warning">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Web interface settings</h3>
+                                        <h3 class="box-title">Web interface instellingen</h3>
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <h4>Interface appearance</h4>
+                                                <h4>Interface uiterlijk</h4>
                                                 <div class="form-group">
                                                     <div class="checkbox">
                                                         <label><input type="checkbox" name="boxedlayout" value="yes"
                                                                       <?php if ($boxedlayout){ ?>checked<?php }
-                                                                      ?>>Use boxed layout (helpful when working on large screens)</label>
+                                                                      ?>>Gebruik de kleine layout (makkelijker werken op grotere schermen)</label>
                                                     </div>
                                                 </div>
-                                                <h4>CPU Temperature Unit</h4>
+                                                <h4>CPU Temperatuur eenheid</h4>
                                                 <div class="form-group">
                                                     <div class="radio">
                                                         <label><input type="radio" name="tempunit" value="C"
@@ -946,7 +946,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                                                       ?>>Fahrenheit</label>
                                                     </div>
                                                 </div>
-                                                <h4>Administrator Email Address</h4>
+                                                <h4>Administrator Email Adres</h4>
                                                 <div class="form-group">
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" name="adminemail"
