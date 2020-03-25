@@ -30,9 +30,9 @@
         <div class="row">
           <div class="col-xs-4">
             <div class="form-group">
-              <div class="checkbox pull-right text-center"><label><input type="checkbox" id="logincookie" name="persistentlogin">Onthoud dit apparaat voor 7 dagen</label></div>
+              <div class="checkbox  text-center"><label><input type="checkbox" id="logincookie" name="persistentlogin">Onthoud dit apparaat voor 7 dagen</label></div>
             </div>
-            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
+            <button type="submit" href="#" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
           </div>
         </div>
         <br>
