@@ -19,9 +19,6 @@ $token = $_SESSION['token'];
 <div class="row">
     <div class="col-md-12">
       <div class="box" id="network-details">
-        <div class="box-header with-border">
-          <h3 class="box-title">Network overview</h3>
-        </div>
         <!-- /.box-header -->
         <div class="box-body">
             <table id="network-entries" class="display table table-striped table-bordered" cellspacing="0" width="100%">
