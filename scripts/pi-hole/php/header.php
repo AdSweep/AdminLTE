@@ -387,41 +387,16 @@ if($auth) {
                         <i class="fa fa-file-alt"></i> <span>Netwerkactiviteit</span>
                     </a>
                 </li>
-                <li class="treeview<?php if($scriptname === "db_queries.php" || $scriptname === "db_lists.php" || $scriptname === "db_graph.php"){ ?> active<?php } ?>">
-                  <a href="#">
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-down pull-right" style="padding-right: 5px;"></i>
-                    </span>
-                    <i class="fa fa-clock"></i> <span>Long term data</span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li<?php if($scriptname === "db_graph.php"){ ?> class="active"<?php } ?>>
-                        <a href="db_graph.php">
-                            <i class="fa fa-file-alt"></i> <span>Graphics</span>
-                        </a>
-                    </li>
-                    <li<?php if($scriptname === "db_queries.php"){ ?> class="active"<?php } ?>>
-                        <a href="db_queries.php">
-                            <i class="fa fa-file-alt"></i> <span>Query Log</span>
-                        </a>
-                    </li>
-                    <li<?php if($scriptname === "db_lists.php"){ ?> class="active"<?php } ?>>
-                        <a href="db_lists.php">
-                            <i class="fa fa-file-alt"></i> <span>Top Lists</span>
-                        </a>
-                    </li>
-                  </ul>
-                </li>
                 <!-- Whitelist -->
                 <li<?php if($scriptname === "whitelist"){ ?> class="active"<?php } ?>>
                     <a href="list.php?l=white">
-                        <i class="fa fa-check-circle "></i> <span>Whitelist</span>
+                        <i class="fa fa-check-circle "></i> <span>Advertenties toestaan</span>
                     </a>
                 </li>
                 <!-- Blacklist -->
                 <li<?php if($scriptname === "blacklist"){ ?> class="active"<?php } ?>>
                     <a href="list.php?l=black">
-                        <i class="fa fa-ban"></i> <span>Blacklist</span>
+                        <i class="fa fa-ban"></i> <span>Advertenties blokkeren</span>
                     </a>
                 </li>
                 <!-- Toggle -->
