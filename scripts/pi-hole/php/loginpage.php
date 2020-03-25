@@ -27,7 +27,7 @@
           <input type="password" id="loginpw" name="pw" class="form-control" placeholder="Wachtwoord" autofocus>
           <span class="fa fa-key form-control-feedback"></span>
         </div>
-        <div class="row">
+        <div class="">
           <div class="col-lg-4">
             <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
           </div>
