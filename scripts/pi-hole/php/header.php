@@ -400,98 +400,11 @@ if($auth) {
                     </a>
                 </li>
                 <!-- Toggle -->
-
-                <li id="pihole-disable" class="treeview"<?php if ($pistatus == "0") { ?> hidden="true"<?php } ?>>
-                  <a href="#">
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-down pull-right" style="padding-right: 5px;"></i>
-                    </span>
-                    <i class="fa fa-stop"></i> <span>Disable&nbsp;&nbsp;&nbsp;<span id="flip-status-disable"></span></span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li>
-                        <a href="#" id="pihole-disable-permanently">
-                            <i class="fa fa-stop"></i> <span>Permanently</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="pihole-disable-10s">
-                            <i class="fa fa-clock"></i> <span>For 10 seconds</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="pihole-disable-30s">
-                            <i class="fa fa-clock"></i> <span>For 30 seconds</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="pihole-disable-5m">
-                            <i class="fa fas fa-clock"></i> <span>For 5 minutes</span>
-                        </a>
-                    </li>
-                    <li>
-                      <a href="#" id="pihole-disable-cst" data-toggle="modal" data-target="#customDisableModal">
-                            <i class="fa fa-clock"></i> <span>Custom time</span>
-                      </a>
-                    </li>
-                  </ul>
-                    <!-- <a href="#" id="flip-status"><i class="fa fa-stop"></i> <span>Disable</span></a> -->
-                </li>
-                <li id="pihole-enable" class="treeview"<?php if ($pistatus == "1") { ?> hidden="true"<?php } ?>>
-                    <a href="#"><i class="fa fa-play"></i> <span id="enableLabel">Enable&nbsp;&nbsp;&nbsp;<span id="flip-status-enable"></span></span></a>
-                </li>
-                <!-- Tools -->
-                <li class="treeview <?php if(in_array($scriptname, array("gravity.php", "queryads.php", "auditlog.php", "taillog.php", "taillog-FTL.php", "debug.php"))){ ?>active<?php } ?>">
-                  <a href="#">
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-down pull-right" style="padding-right: 5px;"></i>
-                    </span>
-                    <i class="fa fa-folder"></i> <span>Tools</span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <!-- Run gravity.sh -->
-                    <li<?php if($scriptname === "gravity.php"){ ?> class="active"<?php } ?>>
-                        <a href="gravity.php">
-                            <i class="fa fa-arrow-circle-down"></i> <span>Update Gravity</span>
-                        </a>
-                    </li>
-                    <!-- Query Lists -->
-                    <li<?php if($scriptname === "queryads.php"){ ?> class="active"<?php } ?>>
-                        <a href="queryads.php">
-                            <i class="fa fa-search"></i> <span>Query Lists</span>
-                        </a>
-                    </li>
-                    <!-- Audit log -->
-                    <li<?php if($scriptname === "auditlog.php"){ ?> class="active"<?php } ?>>
-                        <a href="auditlog.php">
-                            <i class="fa fa-balance-scale"></i> <span>Audit log</span>
-                        </a>
-                    </li>
-                    <!-- Tail pihole.log -->
-                    <li<?php if($scriptname === "taillog.php"){ ?> class="active"<?php } ?>>
-                        <a href="taillog.php">
-                            <i class="fa fa-list-ul"></i> <span>Tail pihole.log</span>
-                        </a>
-                    </li>
-                    <!-- Tail pihole-FTL.log -->
-                    <li<?php if($scriptname === "taillog-FTL.php"){ ?> class="active"<?php } ?>>
-                        <a href="taillog-FTL.php">
-                            <i class="fa fa-list-ul"></i> <span>Tail pihole-FTL.log</span>
-                        </a>
-                    </li>
-                    <!-- Generate debug log -->
-                    <li<?php if($scriptname === "debug.php"){ ?> class="active"<?php } ?>>
-                        <a href="debug.php">
-                            <i class="fa fa-ambulance"></i> <span>Generate debug log</span>
-                        </a>
-                    </li>
-                  </ul>
-                </li>
                 <!-- Network -->
                 <!-- Settings -->
                 <li<?php if($scriptname === "settings.php"){ ?> class="active"<?php } ?>>
                     <a href="settings.php">
-                        <i class="fa fa-cogs"></i> <span>Settings</span>
+                        <i class="fa fa-cogs"></i> <span>Instellingen</span>
                     </a>
                 </li>
                 <!-- Logout -->
