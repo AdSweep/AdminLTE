@@ -29,7 +29,7 @@
         </div>
         <div class="row">
           <div class="col-xs-4">
-            <button type="submit" href="#" class="btn btn-primary"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
+            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
           </div>
         </div>
         <br>
