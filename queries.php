@@ -134,24 +134,24 @@ if(strlen($showing) > 0)
             <table id="all-queries" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>Time</th>
+                        <th>Tijd</th>
                         <th>Type</th>
-                        <th>Domain</th>
-                        <th>Client</th>
+                        <th>Domein</th>
+                        <th>Apparaten</th>
                         <th>Status</th>
-                        <th>Reply</th>
-                        <th>Action</th>
+                        <th>Antwoord</th>
+                        <th>Actie</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Time</th>
+                        <th>Tijd</th>
                         <th>Type</th>
-                        <th>Domain</th>
-                        <th>Client</th>
+                        <th>Domein</th>
+                        <th>Apparaat</th>
                         <th>Status</th>
-                        <th>Reply</th>
-                        <th>Action</th>
+                        <th>Antwoord</th>
+                        <th>Actie</th>
                     </tr>
                 </tfoot>
             </table>
