@@ -1220,7 +1220,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                         <div class="col-md-6">
                             <div class="box">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">FTL Information</h3>
+                                    <h3 class="box-title">FTL Informatie</h3>
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
@@ -1238,7 +1238,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                             <table class="table table-striped table-bordered dt-responsive nowrap">
                                                 <tbody>
                                                     <tr>
-                                                        <th scope="row">FTL version:</th>
+                                                        <th scope="row">FTL versie:</th>
                                                         <td><?php echo $FTLversion; ?></td>
                                                     </tr>
                                                     <tr>
@@ -1246,30 +1246,30 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                                         <td><?php echo $FTLpid; ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">Time FTL started:</th>
+                                                        <th scope="row">Tijd FTL gestart:</th>
                                                         <td><?php print_r(get_FTL_data("start")); ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">User / Group:</th>
+                                                        <th scope="row">User / Groep:</th>
                                                         <td><?php print_r(get_FTL_data("euser")); ?> / <?php print_r(get_FTL_data("egroup")); ?></td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">Total CPU utilization:</th>
+                                                        <th scope="row">Totaal CPU gebruik:</th>
                                                         <td><?php print_r(get_FTL_data("%cpu")); ?>%</td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">Memory utilization:</th>
+                                                        <th scope="row">Geheugen gebruik:</th>
                                                         <td><?php print_r(get_FTL_data("%mem")); ?>%</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
-                                                            <span title="Resident memory is the portion of memory occupied by a process that is held in main memory (RAM). The rest of the occupied memory exists in the swap space or file system.">Used memory:</span>
+                                                            <span title="Resident memory is the portion of memory occupied by a process that is held in main memory (RAM). The rest of the occupied memory exists in the swap space or file system.">Gebruikt geheugen:</span>
                                                         </th>
                                                         <td><?php echo formatSizeUnits(1e3 * floatval(get_FTL_data("rss"))); ?></td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
-                                                            <span title="Size of the DNS domain cache">DNS cache size:</span>
+                                                            <span title="Size of the DNS domain cache">DNS cache grootte:</span>
                                                         </th>
                                                         <td id="cache-size">&nbsp;</td>
                                                     </tr>
