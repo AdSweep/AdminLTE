@@ -1287,7 +1287,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            Bekijken onze <a href="https://docs.pi-hole.net/ftldns/dns-cache/" target="_blank">DNS cache documentatie</a>.
+                                            Bekijk onze <a href="https://docs.pi-hole.net/ftldns/dns-cache/" target="_blank">DNS cache documentatie</a>.
                                             <?php } else { ?>
                                             <div>The FTL service is offline!</div>
                                             <?php } ?>
