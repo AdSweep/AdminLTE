@@ -1042,7 +1042,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                             <form role="form" method="post">
                                 <div class="box box-warning">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Privacy settings</h3>
+                                        <h3 class="box-title">Privacy instellingen</h3>
                                     </div>
                                     <div class="box-body">
                                         <div class="row">
