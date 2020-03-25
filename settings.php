@@ -916,6 +916,33 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                         <div class="col-md-6">
                             <form role="form" method="post">
                                 <div class="box box-warning">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">API settings</h3>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4>Top Lists</h4>
+                                                <p>Exclude the following domains from being shown in</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Top Domains / Top Advertisers</label>
+                                                    <textarea name="domains" class="form-control" placeholder="Enter one domain per line"
+                                                              rows="4"><?php foreach ($excludedDomains as $domain) {
+                                                                             echo $domain . "\n"; }
+                                                                       ?></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Top Clients</label>
+                                                    <textarea name="clients" class="form-control" placeholder="Enter one IP address or host name per line"
+                                                              rows="4"><?php foreach ($excludedClients as $client) {
+                                                                             echo $client . "\n"; }
+                                                                       ?></textarea>
                                                 </div>
                                             </div>
                                         </div>
