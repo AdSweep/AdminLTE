@@ -1047,38 +1047,31 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                     <div class="box-body">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <h4>DNS resolver privacy level</h4>
-                                                <p>Specify if DNS queries should be anonymized, available options are:
+                                                <h4>DNS resolver privacy niveau</h4>
+                                                <p>Specificeer of DNS aanvragen anoniem moeten zijn, er zijn meerdere mogelijkheden:
                                                 <div class="form-group">
                                                     <div class="radio">
                                                         <label><input type="radio" name="privacylevel" value="0"
                                                                       <?php if ($privacylevel === 0){ ?>checked<?php }
-                                                                      ?>>Show everything and record everything<br>Gives maximum amount of statistics</label>
+                                                                      ?>>Sla alle aanvragen op en laat ze zien<br>Geeft de beste inzichten in netwerkactiviteit.</label>
                                                     </div>
                                                     <div class="radio">
                                                         <label><input type="radio" name="privacylevel" value="1"
                                                                       <?php if ($privacylevel === 1){ ?>checked<?php }
-                                                                      ?>>Hide domains: Display and store all domains as "hidden"<br>This disables the Top Domains and Top Ads tables on the dashboard</label>
+                                                                      ?>>Verberg alle domeinnamen en sla de namen als 'verborgen' op<br>Dit zet de Top domeinen en en Top adverteerders uit op het dashboard.</label>
                                                     </div>
                                                     <div class="radio">
                                                         <label><input type="radio" name="privacylevel" value="2"
                                                                       <?php if ($privacylevel === 2){ ?>checked<?php }
-                                                                      ?>>Hide domains and clients: Display and store all domains as "hidden" and all clients as "0.0.0.0"<br>This disables all tables on the dashboard</label>
+                                                                      ?>>Verberg alle domeinnamen en apparaatnamen"<br>Deze instelling zet alle tabellen op het dashboard uit.</label>
                                                     </div>
                                                     <div class="radio">
                                                         <label><input type="radio" name="privacylevel" value="3"
                                                                       <?php if ($privacylevel === 3){ ?>checked<?php }
-                                                                      ?>>Anonymous mode: This disables basically everything except the live anonymous statistics<br>No history is saved at all to the database, and nothing is shown in the query log. Also, there are no top item lists.</label>
-                                                    </div>
-                                                    <div class="radio">
-                                                        <label><input type="radio" name="privacylevel" value="4"
-                                                                      <?php if ($privacylevel === 4){ ?>checked<?php }
-                                                            ?>>No Statistics mode: This disables all statistics processing. Even the query counters will not be available.<br><strong>Note that regex blocking is not available when query analyzing is disabled.</strong><br>Additionally, you can disable logging to the file <code>/var/log/pihole.log</code> using <code>sudo pihole logging off</code>.</label>
+                                                                      ?>>Privemodus er wordt geen informatie over internetverkeer opgeslagen<br>Deze instelling zet alle tabellen op het dashboard uit.</label>
                                                     </div>
                                                 </div>
-                                                <p>The privacy level may be increased at any time without having to restart the DNS resolver. However, note that the DNS resolver needs to be restarted when lowering the privacy level. This restarting is automatically done when saving.</p>
                                                 <?php if($privacylevel > 0 && $piHoleLogging){ ?>
-                                                <p class="lookatme">Warning: Pi-hole's query logging is activated. Although the dashboard will hide the requested details, all queries are still fully logged to the pihole.log file.</p>
                                                 <?php } ?>
                                             </div>
                                         </div>
