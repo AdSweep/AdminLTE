@@ -33,7 +33,7 @@ function getFullName() {
 
 <!-- Domain Input -->
 <div class="form-group input-group">
-    <input id="domain" type="text" class="form-control" placeholder="voeg een domein toe (voorbeeld.nl of sub.voorbeeld.nl)">
+    <input id="domain" type="text" class="form-control" placeholder="Voeg een domein toe (voorbeeld.nl of sub.voorbeeld.nl)">
     <span class="input-group-btn">
     <?php if($list === "black") { ?>
         <button id="btnAdd" class="btn btn-default" type="button">Toevoegen (exact)</button>
@@ -67,11 +67,11 @@ function getFullName() {
 
 <!-- Domain List -->
 <?php if($list === "black") { ?>
-<h3>Exact blocking</h3>
+<h3>Exact blokkeren</h3>
 <?php } ?>
 <ul class="list-group" id="list"></ul>
 <?php if($list === "black") { ?>
-<h3><a href="https://docs.pi-hole.net/ftldns/regex/overview/" target="_blank" title="Click for Pi-hole Regex documentation">Regex</a> &amp; Wildcard blocking</h3>
+<h3><a href="https://docs.pi-hole.net/ftldns/regex/overview/" target="_blank" title="Click for Pi-hole Regex documentation">Regex</a> &amp; Wildcard blokkeren</h3>
 <ul class="list-group" id="list-regex"></ul>
 <?php } ?>
 
