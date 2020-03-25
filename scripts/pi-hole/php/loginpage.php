@@ -42,12 +42,6 @@
             if (!$wrongpassword) { ?> collapsed-box<?php } ?> box-solid">
               <div class="box-header with-border">
                 <h3 class="box-title text-center">Wachtwoord vergeten</h3>
-
-                <div class="box-tools pull-right">
-                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
-                      class="fa <?php if ($wrongpassword) { ?>fa-minus<?php } else { ?>fa-plus<?php } ?>"></i>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
