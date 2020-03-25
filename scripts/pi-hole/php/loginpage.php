@@ -37,9 +37,6 @@
           <div class="col-xs-12">
             <div class="box box-<?php if (!$wrongpassword) { ?>info<?php } else { ?>danger<?php }
             if (!$wrongpassword) { ?> collapsed-box<?php } ?> box-solid">
-              <div class="box-header with-border">
-                <h3 class="box-title text-center">Wachtwoord vergeten</h3>
-              </div>
             </div>
           </div>
         </div>
