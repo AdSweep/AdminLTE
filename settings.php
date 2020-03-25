@@ -250,16 +250,16 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                             <div class="col-md-12">
                                 <div class="box">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Blocklists used to generate Pi-hole's Gravity: <?php echo count($adlist); ?></h3>
+                                        <h3 class="box-title">Gebruikte blocklists door AdSweep: <?php echo count($adlist); ?></h3>
                                     </div>
                                     <div class="box-body">
                                         <div class="table-responsive">
                                             <table class="table table-striped table-bordered dt-responsive nowrap">
                                                 <thead>
                                                 <tr>
-                                                    <th>Enabled</th>
-                                                    <th>List</th>
-                                                    <th style="width:1%">Delete</th>
+                                                    <th>Gebruiken</th>
+                                                    <th>Lijst</th>
+                                                    <th style="width:1%">Verwijderen</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -283,15 +283,15 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                             </table>
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="newuserlists" class="form-control" rows="1" placeholder="Enter one URL per line to add new blocklists"></textarea>
+                                            <textarea name="newuserlists" class="form-control" rows="1" placeholder="Voer een URL van een blocklist in om hem toe te voegen"></textarea>
                                         </div>
                                         <input type="hidden" name="field" value="adlists">
                                         <input type="hidden" name="token" value="<?php echo $token ?>">
                                     </div>
                                     <div class="box-footer clearfix">
-                                        <button type="submit" class="btn btn-primary" name="submit" value="save" id="blockinglistsave">Save</button>
-                                        <span><strong>Important: </strong>Save and Update when you're done!</span>
-                                        <button type="submit" class="btn btn-primary pull-right" name="submit" id="blockinglistsaveupdate" value="saveupdate">Save and Update</button>
+                                        <button type="submit" class="btn btn-primary" name="submit" value="save" id="blockinglistsave">Opslaan</button>
+                                        <span><strong>Let op! </strong>Sla je wijzingen op, voodat je doorgaat</span>
+                                        <button type="submit" class="btn btn-primary pull-right" name="submit" id="blockinglistsaveupdate" value="saveupdate">Opslaan en Updaten</button>
                                     </div>
                                 </div>
                             </div>
