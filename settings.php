@@ -1187,7 +1187,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                         <div class="col-md-6">
                             <div class="box">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Network Information</h3>
+                                    <h3 class="box-title">Netwerk Informatie</h3>
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
@@ -1195,19 +1195,19 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                                             <table class="table table-striped table-bordered dt-responsive nowrap">
                                                 <tbody>
                                                 <tr>
-                                                    <th scope="row">Pi-hole Ethernet Interface:</th>
+                                                    <th scope="row">AdSweep Ethernet Interface:</th>
                                                     <td><?php echo htmlentities($piHoleInterface); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Pi-hole IPv4 address:</th>
+                                                    <th scope="row">AdSweep IPv4 adres:</th>
                                                     <td><?php echo htmlentities($piHoleIPv4); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Pi-hole IPv6 address:</th>
+                                                    <th scope="row">AdSweep IPv6 adres:</th>
                                                     <td><?php echo htmlentities($piHoleIPv6); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Pi-hole hostname:</th>
+                                                    <th scope="row">AdSweep hostname:</th>
                                                     <td><?php echo htmlentities($hostname); ?></td>
                                                 </tr>
                                                 </tbody>
