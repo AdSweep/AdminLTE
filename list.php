@@ -33,14 +33,14 @@ function getFullName() {
 
 <!-- Domain Input -->
 <div class="form-group input-group">
-    <input id="domain" type="text" class="form-control" placeholder="Add a domain (example.com or sub.example.com)">
+    <input id="domain" type="text" class="form-control" placeholder="voeg een domein toe (voorbeeld.nl of sub.voorbeeld.nl)">
     <span class="input-group-btn">
     <?php if($list === "black") { ?>
-        <button id="btnAdd" class="btn btn-default" type="button">Add (exact)</button>
-        <button id="btnAddWildcard" class="btn btn-default" type="button">Add (wildcard)</button>
-        <button id="btnAddRegex" class="btn btn-default" type="button">Add (regex)</button>
+        <button id="btnAdd" class="btn btn-default" type="button">Toevoegen (exact)</button>
+        <button id="btnAddWildcard" class="btn btn-default" type="button">Toevoegen (wildcard)</button>
+        <button id="btnAddRegex" class="btn btn-default" type="button">Toevoegen (regex)</button>
     <?php }else{ ?>
-        <button id="btnAdd" class="btn btn-default" type="button">Add</button>
+        <button id="btnAdd" class="btn btn-default" type="button">Toevoegen</button>
     <?php } ?>
         <button id="btnRefresh" class="btn btn-default" type="button"><i class="fa fa-sync"></i></button>
     </span>
