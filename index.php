@@ -106,7 +106,7 @@ if($auth){ ?>
         <div class="col-md-12">
             <div class="box" id="clients">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Clients (over time)</h3>
+                    <h3 class="box-title">Apparaten (over bepaalde tijd)</h3>
                 </div>
                 <div class="box-body">
                     <div class="chart">
@@ -135,7 +135,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="domain-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Permitted Domains</h3>
+          <h3 class="box-title">Meest gebruikte toegestaande domeinen</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -143,9 +143,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
+                    <th>Domein</th>
                     <th>Hits</th>
-                    <th>Frequency</th>
+                    <th>Hoeveelheid</th>
                     </tr>
                   </tbody>
                 </table>
@@ -162,7 +162,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="ad-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Blocked Domains</h3>
+          <h3 class="box-title">Meest geblokkeerde domeinen</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -170,9 +170,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
+                    <th>Domein</th>
                     <th>Hits</th>
-                    <th>Frequency</th>
+                    <th>Hoeveelheid</th>
                     </tr>
                   </tbody>
                 </table>
@@ -191,7 +191,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="client-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Clients (total)</h3>
+          <h3 class="box-title">Top apparaten (totaal)</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -199,9 +199,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Client</th>
-                    <th>Requests</th>
-                    <th>Frequency</th>
+                    <th>Apparaat</th>
+                    <th>Aanvragen</th>
+                    <th>Hoeveelheid</th>
                     </tr>
                   </tbody>
                 </table>
@@ -219,7 +219,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="client-frequency-blocked">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Clients (blocked only)</h3>
+          <h3 class="box-title">Top apparaten (geblokkeerd)</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -227,9 +227,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Client</th>
-                    <th>Requests</th>
-                    <th>Frequency</th>
+                    <th>Apparaat</th>
+                    <th>Aanvragen</th>
+                    <th>Hoeveelheid</th>
                     </tr>
                   </tbody>
                 </table>
