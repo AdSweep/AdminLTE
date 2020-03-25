@@ -28,7 +28,7 @@
           <span class="fa fa-key form-control-feedback"></span>
         </div>
         <div class="row">
-          <div class="col-xs-4">
+          <div class="">
             <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
           </div>
         </div>
