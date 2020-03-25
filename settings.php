@@ -1301,45 +1301,45 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "blocklists"
                         <div class="col-md-12">
                             <div class="box box-warning">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">Danger Zone!</h3><br/>
+                                    <h3 class="box-title">Let Op! Alleen voor nerds.</h3><br/>
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <?php if ($piHoleLogging) { ?>
-                                                <button type="button" class="btn btn-warning confirm-disablelogging-noflush form-control">Disable query logging</button>
+                                                <button type="button" class="btn btn-warning confirm-disablelogging-noflush form-control">Uitzetten van de activiteitlogs</button>
                                             <?php } else { ?>
                                                 <form role="form" method="post">
                                                     <input type="hidden" name="action" value="Enable">
                                                     <input type="hidden" name="field" value="Logging">
                                                     <input type="hidden" name="token" value="<?php echo $token ?>">
-                                                    <button type="submit" class="btn btn-success form-control">Enable query logging</button>
+                                                    <button type="submit" class="btn btn-success form-control">Aanzetten van de activiteitlogs</button>
                                                 </form>
                                             <?php } ?>
                                         </div>
                                         <p class="hidden-md hidden-lg"></p>
                                         <div class="col-md-4">
                                             <?php if ($piHoleLogging) { ?>
-                                                <button type="button" class="btn btn-danger confirm-disablelogging form-control">Disable query logging and flush logs</button>
+                                                <button type="button" class="btn btn-danger confirm-disablelogging form-control">Uitzetten en leegmaken van de activiteitlogs</button>
                                             <?php } ?>
                                         </div>
                                         <p class="hidden-md hidden-lg"></p>
                                         <div class="col-md-4">
-                                            <button type="button" class="btn btn-warning confirm-restartdns form-control">Restart DNS resolver</button>
+                                            <button type="button" class="btn btn-warning confirm-restartdns form-control">Opnieuw opstarten DNS resolver</button>
                                         </div>
                                     </div>
                                     <br/>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <button type="button" class="btn btn-danger confirm-flushlogs form-control">Flush logs</button>
+                                            <button type="button" class="btn btn-danger confirm-flushlogs form-control">Leegmaken van de activiteitlogs</button>
                                         </div>
                                         <p class="hidden-md hidden-lg"></p>
                                         <div class="col-md-4">
-                                            <button type="button" class="btn btn-danger confirm-poweroff form-control">Power off system</button>
+                                            <button type="button" class="btn btn-danger confirm-poweroff form-control">AdSweep uitzetten</button>
                                         </div>
                                         <p class="hidden-md hidden-lg"></p>
                                         <div class="col-md-4">
-                                            <button type="button" class="btn btn-danger confirm-reboot form-control">Restart system</button>
+                                            <button type="button" class="btn btn-danger confirm-reboot form-control">Adsweep opniew opstarten</button>
                                         </div>
                                     </div>
 
