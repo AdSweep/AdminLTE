@@ -18,9 +18,9 @@ if($list !== "white" && $list !== "black"){
 function getFullName() {
     global $list;
     if($list == "white")
-        echo "Whitelist";
+        echo "Advertenties toestaan";
     else
-        echo "Blacklist";
+        echo "Advertenties blokkeren";
 }
 ?>
 <!-- Send list type to JS -->
