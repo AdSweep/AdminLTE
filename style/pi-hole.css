@@ -21,6 +21,12 @@
 .small-box span.glow {
 	text-shadow: 0px 0px 5px #fff;
 }
+
+.adsweeplight
+{
+	background-color: #343144;
+}
+
 .skin-blue .list-group-item:hover {
 	background: #000000;
 }
