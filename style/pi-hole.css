@@ -192,3 +192,25 @@
 .page-wrapper {
     background-color: pink;
 }
+
+.adsweeplight .logo
+{
+	background-color: #343144;
+}
+
+.sidebar-toggle
+{
+	background-color: #343144;
+}
+
+.skin-blue
+{
+	background-color: #343144;
+	color: #343144;
+}
+
+.sidebar-toggle:hover
+{
+	background-color: #343144;
+	color: #343144;
+}
