@@ -247,9 +247,9 @@ if($auth) {
         <!-- Logo -->
         <a href="https://adsweep.nl" class="logo" style="background-color:#343144;" target="_blank">
             <!-- mini logo for sidebar mini 50x50 pixels --> 
-            <span class="logo-mini">A<b>S</b></span>
+            <span class="logo-mini">A<b>d</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>AdSweep</b></span>
+            <span class="logo-lg"><b><b style="color: #7fd153;">A</b><b style="color: #f96411;">d</b>Sweep</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top navbar-default" style="background-color:#343144;" role="navigation">
@@ -257,11 +257,6 @@ if($auth) {
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only adsweeplight">Toggle navigation</span>
             </a>
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <li><a style="pointer-events:none;"><samp><?php echo gethostname(); ?></samp></a></li>
-                </ul>
-            </div>
         </nav>
     </header>
     <!-- Left side column. contains the logo and sidebar -->
@@ -288,9 +283,8 @@ if($auth) {
             }
             ?>
             <ul class="sidebar-menu">
-                
                 <!-- Home Page -->
-                <li<?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
+                <li <?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
                     <a href="index.php">
                         <i class="fa fa-home"></i> <span>Dashboard</span>
                     </a>
@@ -328,7 +322,7 @@ if($auth) {
                 if(strlen($pwhash) > 0) { ?>
                 <li>
                     <a href="?logout">
-                        <i class="fa fa-user-times"></i> <span>Logout</span>
+                        <i class="fa fa-user-times"></i> <span>Log uit</span>
                     </a>
                 </li>
                 <?php } ?>
@@ -339,7 +333,7 @@ if($auth) {
                 if(strlen($pwhash) > 0 && !$auth) { ?>
                 <li<?php if($scriptname === "login"){ ?> class="active"<?php } ?>>
                     <a href="index.php?login">
-                        <i class="fa far fa-user"></i> <span>Login</span>
+                        <i class="fa far fa-user"></i> <span>Log in</span>
                     </a>
                 </li>
                 <?php } ?>

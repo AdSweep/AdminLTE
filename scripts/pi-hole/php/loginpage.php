@@ -8,11 +8,8 @@
 
 <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" style="float:none">
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <div style="text-align: center;"><img src="img/adsweep.png" width="<?php if ($boxedlayout) { ?>50%<?php } else { ?>30%<?php } ?>"></div><br>
-
-        <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;"><b>AdSweep</b></span></div>
-      <p class="login-box-msg">Log in om te beginnen</p>
+    <div class="p-0">
+      <div style="text-align: center;"><img class="p-0" src="img/adsweep-login.png" width="<?php if ($boxedlayout) { ?>100%<?php } else { ?>50%<?php } ?>"></div>
       <div id="cookieInfo" class="panel-title text-center" style="color:#F00; font-size: 150%" hidden>Verify that cookies are allowed for <samp><?php echo $_SERVER['HTTP_HOST']; ?></samp></div>
       <?php if ($wrongpassword) { ?>
         <div class="form-group has-error login-box-msg">
@@ -29,7 +26,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
+            <button type="submit" href="#" class="btn btn-light pull-right"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp;Log in</button>
           </div>
         </div>
         <br>
