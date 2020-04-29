@@ -402,19 +402,3 @@
 	text-align: right;
 	justify-content: flex-end;
 }
-
-.paginate_button
-{
-	background-color: #f900c3 !important
-}
-
-.paginate_button:active
-{
-	background-color: #f900c3 !important
-}
-
-.active
-{
-	color: #f900c3 !important;
-	background-color: #f900c3 !important
-}
