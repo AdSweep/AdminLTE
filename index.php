@@ -26,9 +26,9 @@
 <div class="row">
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-green" id="total_queries" title="only A + AAAA queries">
+        <div class="small-box bg-adsweepgreen" id="total_queries" title="only A + AAAA queries">
             <div class="inner">
-                <p>Totale Verzoeken (<span id="unique_clients">-</span> Apparaten)</p>
+                <p>Totale Verzoeken (<span id="unique_clients">-</span> apparaten)</p>
                 <h3 class="statistic"><span id="dns_queries_today">---</span></h3>
             </div>
             <div class="icon">
@@ -39,9 +39,9 @@
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-red">
+        <div class="small-box bg-adsweeporange">
             <div class="inner">
-                <p>Advertenties Geblokkeerd</p>
+                <p>Advertenties geblokkeerd</p>
                 <h3 class="statistic"><span id="ads_blocked_today">---</span></h3>
             </div>
             <div class="icon">
@@ -52,9 +52,9 @@
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-yellow">
+        <div class="small-box bg-adsweepdarkgreen">
             <div class="inner">
-                <p>Percentage Geblokeerd</p>
+                <p>Percentage geblokkeerd</p>
                 <h3 class="statistic"><span id="ads_percentage_today">---</span></h3>
             </div>
             <div class="icon">
@@ -65,9 +65,9 @@
     <!-- ./col -->
     <div class="col-lg-3 col-sm-6">
         <!-- small box -->
-        <div class="small-box bg-aqua" title="<?php echo gravity_last_update(); ?>">
+        <div class="small-box bg-adsweepdarkred" title="<?php echo gravity_last_update(); ?>">
             <div class="inner">
-                <p>Domeinen op Blocklist</p>
+                <p>Domeinen op blocklist</p>
                 <h3 class="statistic"><span id="domains_being_blocked">---</span></h3>
             </div>
             <div class="icon">

@@ -48,8 +48,7 @@
     <!-- /.content-wrapper -->
     <footer class="main-footer">
 	<!-- Version Infos -->
-
-        <div class="" style="display: inline-block "><strong><i class="fa fa-heart text-center"></i></a></strong> Adsweep</div>
+		<div class="text-center"><strong><i class="fa fa-heart text-center"></i></a></strong> AdSweep</div>
     </footer>
 </div>
 <!-- ./wrapper -->

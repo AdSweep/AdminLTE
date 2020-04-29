@@ -32,7 +32,7 @@
 
 .skin-blue .main-header .navbar .sidebar-toggle:hover
 {
-	background-color:#367fa9
+	background-color:#161326
 }
 
 @media (max-width:767px)
@@ -49,13 +49,13 @@
 	
 	.skin-blue .main-header .navbar .dropdown-menu li a:hover
 	{
-		background:#367fa9
+		background:#161326
 	}
 }
 
 .skin-blue .main-header .logo
 {
-	background-color:#367fa9;
+	background-color:#161326;
 	color:#fff;
 	border-bottom:0 solid transparent
 }
@@ -214,7 +214,7 @@
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover
 {
-	background-color:#367fa9
+	background-color:#161326
 }
 
 @media (max-width:767px)
@@ -229,13 +229,13 @@
 	}
 	.skin-blue .main-header .navbar .dropdown-menu li a:hover
 	{
-		background:#367fa9
+		background:#161326
 	}
 }
 
 .skin-blue .main-header .logo
 {
-	background-color:#367fa9;
+	background-color:#161326;
 	color:#fff;
 	border-bottom:0 solid transparent
 }
@@ -365,4 +365,56 @@
 .skin-blue.layout-top-nav .main-header>.logo:hover
 {
 	background-color:#3b8ab8
+}
+
+.adsweepgreen
+{
+	color: #fff !important;
+	background-color:#7fd153 !important
+}
+
+.bg-adsweepgreen
+{
+	color: #fff !important;
+	background-color:#7fd153 !important
+}
+
+.bg-adsweeporange
+{
+	color: #fff !important;
+	background-color:#f96411 !important
+}
+
+.bg-adsweepdarkred
+{
+	color: #fff !important;
+	background-color:#aa1600 !important
+}
+
+.bg-adsweepdarkgreen
+{
+	color: #fff !important;
+	background-color:#008855 !important
+}
+
+.adsweeploginbtn
+{
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.paginate_button
+{
+	background-color: #f900c3 !important
+}
+
+.paginate_button:active
+{
+	background-color: #f900c3 !important
+}
+
+.active
+{
+	color: #f900c3 !important;
+	background-color: #f900c3 !important
 }

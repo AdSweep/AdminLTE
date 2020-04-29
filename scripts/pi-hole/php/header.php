@@ -247,14 +247,14 @@ if($auth) {
         <!-- Logo -->
         <a href="https://adsweep.nl" class="logo" style="background-color:#343144;" target="_blank">
             <!-- mini logo for sidebar mini 50x50 pixels --> 
-            <span class="logo-mini">A<b>d</b></span>
+            <span class="logo-mini"><b style="color: #7fd153;">A</b><b style="color: #f96411;">d</b></span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b><b style="color: #7fd153;">A</b><b style="color: #f96411;">d</b>Sweep</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top navbar-default" style="background-color:#343144;" role="navigation">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <a href="#" class="sidebar-toggle adsweeplight" data-toggle="offcanvas" role="button">
                 <span class="sr-only adsweeplight">Toggle navigation</span>
             </a>
         </nav>
