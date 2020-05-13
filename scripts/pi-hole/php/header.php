@@ -253,10 +253,21 @@ if($auth) {
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top navbar-default" style="background-color:#343144;" role="navigation">
-            <!-- Sidebar toggle button-->
+			<!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle adsweeplight" data-toggle="offcanvas" role="button">
                 <span class="sr-only adsweeplight">Toggle navigation</span>
             </a>
+			
+			<!-- Navbar tutorial pagina knop -->
+			<a href="tutorial.php" class="sidebar-tutorial" role="button">
+                <i class="fas fa-info-circle"></i>
+            </a>
+			
+			<!-- Navbar status dropdown knop -->
+			<a href="#" class="sidebar-tutorial dropdown-toggle" data-toggle="dropdown" role="button">
+				<i class="far fa-lightbulb"></i>
+			</a>
+			
         </nav>
     </header>
     <!-- Left side column. contains the logo and sidebar -->

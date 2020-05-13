@@ -28,7 +28,7 @@
 }
 
 .skin-blue .list-group-item:hover {
-	background: #000000;
+	background: #e2e2e2;
 }
 @-webkit-keyframes Pulse{
 	from {color:#630030;-webkit-text-shadow:0 0 2px transparent;}
@@ -219,4 +219,26 @@
 {
 	background-color: #343144;
 	color: #343144;
+}
+
+.sidebar-tutorial
+{
+	height: 50px;
+	float:right;
+	background-color:transparent;
+	background-image:none;
+	padding:15px 15px;
+	font-family:fontAwesome;
+	color: #ffffff;
+}
+
+.sidebar-tutorial:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.sidebar-tutorial:hover
+{
+	background-color: #161326;
+	color: #ffffff;
 }
