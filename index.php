@@ -5,9 +5,23 @@
 *
 *    This file is copyright under the latest version of the EUPL.
 *    Please see LICENSE file for your rights under this license. */
+            $theFile = "tutorialstatus.txt";
+            $line = file($theFile);
+
+            $a=trim($line[1]);
+
+
+
+        if ($a == "0") {
+            $newcontent = "1";
+
+            file_put_contents($theFile,$newcontent);
+            header('Location: tutorial.php');
+            die();
+        }
+
     $indexpage = true;
     require "scripts/pi-hole/php/header.php";
-    require "tutorialcheck.php";
     require_once("scripts/pi-hole/php/gravity.php");
 
     function getinterval()
@@ -21,22 +35,6 @@
         {
              return "24";
         }
-    }
-    include "tutorialstatus.txt";
-        $theFile = "tutorialstatus.txt";
-        $line = file($theFile);
-        //echo trim($line[1]); //This will output "&activeGame=1" without     quotation marks
-
-        $a=trim($line[1]);
-
-        $truestr="0";
-        $tutaddress ="tutorial.php"
-
-
-        if ($a == $truestr) {
-            echo "<h href='".$link_address."'>Link</a>";
-        } else {
-            echo "<a href='".$link_address."'>Link</a>";
     }
 ?>
 ?>
