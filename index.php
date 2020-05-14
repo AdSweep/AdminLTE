@@ -41,7 +41,7 @@
         <!-- small box -->
         <div class="small-box bg-adsweeporange">
             <div class="inner">
-                <p>Advertenties geblokkeerd</p>
+                <p>yo yo Yoghurt</p>
                 <h3 class="statistic"><span id="ads_blocked_today">---</span></h3>
             </div>
             <div class="icon">
