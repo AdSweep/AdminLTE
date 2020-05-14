@@ -10,7 +10,7 @@
 
             $a=trim($line[1]);
 
-echo "hallo ik ben nog niet in de ifstatement";
+echo "$a";
 
         if ($a == "0") {
             $newcontent = "1";
