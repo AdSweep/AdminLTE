@@ -264,7 +264,7 @@ if($auth) {
             </a>
 			
 			<!-- Navbar status dropdown knop -->
-			<a href="#" class="sidebar-tutorial dropdown-toggle" data-toggle="dropdown" role="button">
+			<a href="adsweep-led.php" class="sidebar-tutorial dropdown-toggle" data-toggle="dropdown" role="button">
 				<i class="far fa-lightbulb"></i>
 			</a>
 			
