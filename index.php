@@ -22,6 +22,23 @@
              return "24";
         }
     }
+    include "tutorialstatus.txt";
+        $theFile = "tutorialstatus.txt";
+        $line = file($theFile);
+        //echo trim($line[1]); //This will output "&activeGame=1" without     quotation marks
+
+        $a=trim($line[1]);
+
+        $truestr="0";
+        $tutaddress ="tutorial.php"
+
+
+        if ($a == $truestr) {
+            echo "<h href='".$link_address."'>Link</a>";
+        } else {
+            echo "<a href='".$link_address."'>Link</a>";
+    }
+?>
 ?>
 <!-- Small boxes (Stat box) -->
 <div class="row">

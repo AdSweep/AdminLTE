@@ -1,2 +1,0 @@
-<?php
-$tutorialstatus = 0;
