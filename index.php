@@ -5,15 +5,24 @@
 *
 *    This file is copyright under the latest version of the EUPL.
 *    Please see LICENSE file for your rights under this license. */
-            $filename = "tutorialstatus.txt";
-            $line = file($theFile);
+//            $line = file($theFile);
 
-            $a=trim($line[1]);
-if (file_exists($filename)) {
-    echo "The file $filename exists";
-} else {
-    echo "The file $filename does not exist";
+  //          $a=trim($line[1]);
+
+$filepath = "tutoralstatus.txt";
+$file = fopen($filepath, "r");
+
+
+
+while(!feof($file))
+{
+    $line = fgets($file);
+    $line = intval(trim($line));
 }
+
+
+
+fclose($userdatafile);
 echo "$a";
 
         if ($a == "0") {
