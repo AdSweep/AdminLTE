@@ -5,33 +5,24 @@
 *
 *    This file is copyright under the latest version of the EUPL.
 *    Please see LICENSE file for your rights under this license. */
-//            $line = file($theFile);
 
-  //          $a=trim($line[1]);
+	$filepath = "tutorialstatus.txt";
+	$file = fopen($filepath, "r");
+	while(!feof($file))
+	{
+		$a = fgets($file);
+		$a = intval(trim($a));
+	}
+	fclose($file);
 
-$filepath = "tutoralstatus.txt";
-$file = fopen($filepath, "r");
-
-
-
-while(!feof($file))
-{
-    $line = fgets($file);
-    $line = intval(trim($line));
-}
-
-
-
-fclose($userdatafile);
-echo "$a";
-
-        if ($a == "0") {
-            $newcontent = "1";
-            echo "hallo ik ben in de if statement geweest";
-            file_put_contents($filename,$newcontent);
-            header('Location: tutorial.php');
-            die();
-        }
+    if ($a == 0) {
+        $newcontent = "1";
+		$file = fopen("tutorialstatus.txt", "w");
+		fwrite($file, $newcontent);
+		
+        header('Location: tutorial.php');
+        die();
+    }
 
     $indexpage = true;
     require "scripts/pi-hole/php/header.php";
@@ -50,7 +41,7 @@ echo "$a";
         }
     }
 ?>
-?>
+
 <!-- Small boxes (Stat box) -->
 <div class="row">
     <div class="col-lg-3 col-sm-6">
