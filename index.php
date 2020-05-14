@@ -5,17 +5,21 @@
 *
 *    This file is copyright under the latest version of the EUPL.
 *    Please see LICENSE file for your rights under this license. */
-            $theFile = "tutorialstatus.txt";
+            $filename = "tutorialstatus.txt";
             $line = file($theFile);
 
             $a=trim($line[1]);
-
+if (file_exists($filename)) {
+    echo "The file $filename exists";
+} else {
+    echo "The file $filename does not exist";
+}
 echo "$a";
 
         if ($a == "0") {
             $newcontent = "1";
             echo "hallo ik ben in de if statement geweest";
-            file_put_contents($theFile,$newcontent);
+            file_put_contents($filename,$newcontent);
             header('Location: tutorial.php');
             die();
         }
