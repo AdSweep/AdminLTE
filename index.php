@@ -10,11 +10,11 @@
 
             $a=trim($line[1]);
 
-
+echo "hallo ik ben nog niet in de ifstatement";
 
         if ($a == "0") {
             $newcontent = "1";
-
+            echo "hallo ik ben in de if statement geweest";
             file_put_contents($theFile,$newcontent);
             header('Location: tutorial.php');
             die();
