@@ -1,7 +1,7 @@
 <?php
 /* Pi-hole: A black hole for Internet advertisements
 *  (c) 2017 Pi-hole, LLC (https://pi-hole.net)
-*  Network-wide ad blocking via your own hardware.
+*  Network-wide ad blocking via your own hardware. YOYOYO
 *
 *  This file is copyright under the latest version of the EUPL.
 *  Please see LICENSE file for your rights under this license. */
@@ -263,11 +263,29 @@ if($auth) {
                 <i class="fas fa-info-circle"></i>
             </a>
 			
-			<!-- Navbar status dropdown knop -->
-			<a href="adsweep-led.php" class="sidebar-tutorial dropdown-toggle" data-toggle="dropdown" role="button">
-				<i class="far fa-lightbulb"></i>
-			</a>
+			<?php
 			
+			$output = trim(shell_exec("adsweep-led"));
+			
+			if ($output === "greenOn")
+			{
+				$color = "color: #7fd153;";
+			}
+			else if ($output === "redOn")
+			{
+				$color = "color: #ff0000;";
+			}
+			else if ($output === "ledOff")
+			{
+				$color = "color: #999999;";
+			}
+			
+			?>
+			
+			<!-- Navbar status dropdown knop -->
+			<a href="adsweep-led.php" class="sidebar-tutorial" role="button">
+				<i style="<?php echo $color; ?>" class="far fa-lightbulb"></i>
+			</a>
         </nav>
     </header>
     <!-- Left side column. contains the logo and sidebar -->
