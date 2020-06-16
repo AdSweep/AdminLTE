@@ -210,7 +210,7 @@
     <link rel="icon" type="image/png" sizes="160x160" href="img/adsweep.png" />
 	
 	<!-- AdSweep web app manifest -->
-	<link rel="manifest" href="/manifest.json">
+	<link rel="manifest" href="./manifest.webmanifest">
 
     <!--[if lt IE 9]>
     <script src="scripts/vendor/html5shiv.min.js"></script>
