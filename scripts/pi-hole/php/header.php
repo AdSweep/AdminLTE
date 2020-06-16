@@ -208,6 +208,9 @@
     <link href="style/vendor/skin-blue.min.css" rel="stylesheet" type="text/css" />
     <link href="style/pi-hole.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" sizes="160x160" href="img/adsweep.png" />
+	
+	<!-- AdSweep web app manifest -->
+	<link rel="manifest" href="/manifest.json">
 
     <!--[if lt IE 9]>
     <script src="scripts/vendor/html5shiv.min.js"></script>
