@@ -272,3 +272,23 @@ else
 <?php
     require "scripts/pi-hole/php/footer.php";
 ?>
+
+<script>
+
+registerSW();
+
+async function registerSW() {
+	if ('serviceWorker' in navigator) {
+		try {
+			await navigator.serviceWorker.register('./sw.js');
+		} catch (e) {
+			console.log('SW failed');
+		}
+	}
+	else
+	{
+		console.log('Cant find service worker');
+	}
+}
+
+</script>
