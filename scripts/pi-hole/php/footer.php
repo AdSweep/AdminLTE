@@ -54,6 +54,9 @@
 
 <!-- AdSweep web app service worker -->
 <script>
+
+alert("Yes, it did");
+
 if ('serviceWorker' in navigator) {
 	console.log("Will the service worker register?");
 	alert("Will the service worker register?");
