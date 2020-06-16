@@ -274,7 +274,7 @@ else
 ?>
 
 <script>
-
+/*
 registerSW();
 
 async function registerSW() {
@@ -289,6 +289,18 @@ async function registerSW() {
 	{
 		console.log('Cant find service worker');
 	}
+}
+*/
+
+if ('serviceWorker' in navigator) {
+	try {
+		await navigator.serviceWorker.register('./sw.js');
+	} catch (e) {
+		console.log('SW failed');
+	}
+}
+else {
+	console.log('Cant find service worker');
 }
 
 </script>
