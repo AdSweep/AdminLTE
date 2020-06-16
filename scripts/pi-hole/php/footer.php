@@ -52,25 +52,6 @@
     </footer>
 </div>
 
-<!-- AdSweep web app service worker -->
-<script>
-
-alert("Yes, it did");
-
-if ('serviceWorker' in navigator) {
-	console.log("Will the service worker register?");
-	alert("Will the service worker register?");
-	navigator.serviceWorker.register('.../service-worker.js');
-	.then(function(reg){
-		console.log("Yes, it did.");
-		alert("Yes, it did");
-	}).catch(function(err) {
-		console.log("No it didn't. This happened: ", err);
-		alert("Yes, it did");
-	});
-}
-</script>
-
 <!-- ./wrapper -->
 <script src="scripts/pi-hole/js/footer.js"></script>
 

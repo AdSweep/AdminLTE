@@ -272,3 +272,19 @@ else
 <?php
     require "scripts/pi-hole/php/footer.php";
 ?>
+
+<!-- AdSweep web app service worker -->
+<script>
+if ('serviceWorker' in navigator) {
+	console.log("Will the service worker register?");
+	alert("Will the service worker register?");
+	navigator.serviceWorker.register('.../service-worker.js');
+	.then(function(reg){
+		console.log("Yes, it did.");
+		alert("Yes, it did");
+	}).catch(function(err) {
+		console.log("No it didn't. This happened: ", err);
+		alert("Yes, it did");
+	});
+}
+</script>
